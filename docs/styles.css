@@ -6,22 +6,7 @@ body {
 
 body#homepage {
     background-image: url('image/2.jpg'); 
-}
-
-body#member1-page {
-    background-image: url('image/sj.jpg');
-}
-
-body#member2-page {
-    background-image: url('image/jfh.jpg');
-}
-
-body#member3-page {
-    background-image: url('image/zyl.jpg');
-}
-
-body#member4-page {
-    background-image: url('image/pyj.jpg');
+    background-repeat: no-repeat;
 }
 
 
