@@ -6,9 +6,28 @@ body {
 
 body#homepage {
     background-image: url('image/2.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
+body#teamintro {
+    background-image: url('image/3.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 600vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+} 
+
+#content {
+    width: 100%;  
+    min-height: 100vh; 
+    position: relative; 
+    overflow: auto; 
+}
 
 .navbar {
     background-color: rgb(0, 88, 0);
@@ -23,7 +42,7 @@ body#homepage {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navbar ul li a {
@@ -34,5 +53,15 @@ body#homepage {
     text-decoration: none;
     font-weight: bold;
 }  
-  
-  
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* 使图片在竖直方向上排列 */
+    gap: 0px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
