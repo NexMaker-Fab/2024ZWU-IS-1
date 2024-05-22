@@ -6,7 +6,7 @@ body {
 
 body#homepage {
     background-image: url('image/2.jpg'); 
-    width: 100vw;   /* 视口宽度的100% */
+    width: 105vw;   /* 视口宽度的100% */
     height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@ body#teamintro {
 }
 body#sj {
     background-image: url('image/sj.jpg'); 
-    width: 100vw;   /* 视口宽度的100% */
+    width: 105vw;   /* 视口宽度的100% */
     height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +93,7 @@ body#sj {
 }
 body#jfh {
     background-image: url('image/jfh.jpg'); 
-    width: 100vw;   /* 视口宽度的100% */
+    width: 105vw;   /* 视口宽度的100% */
     height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@ body#jfh {
 }
 body#zyl {
     background-image: url('image/zyl.jpg'); 
-    width: 100vw;   /* 视口宽度的100% */
+    width: 105vw;   /* 视口宽度的100% */
     height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@ body#zyl {
 }
 body#pyj {
     background-image: url('image/pyj.jpg'); 
-    width: 100vw;   /* 视口宽度的100% */
+    width: 105vw;   /* 视口宽度的100% */
     height: 120vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
