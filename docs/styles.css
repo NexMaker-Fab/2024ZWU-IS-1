@@ -14,13 +14,13 @@ body#homepage {
 }
 
 body#teamintro {
-    background-image: url('image/3.jpg'); 
+    background-image: url('image/team.jpg'); 
     width: 100vw;   /* 视口宽度的100% */
-    height: 600vh;  /* 视口高度的100% */
+    height: 100vh;  /* 视口高度的100% */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-} 
+}
 
 #content {
     width: 100%;  
@@ -52,7 +52,8 @@ body#teamintro {
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
-}  
+    font-size: 24px;  /* 设置导航栏字体大小 */
+}
 
 .image-container {
     display: flex;
@@ -64,4 +65,53 @@ body#teamintro {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.team-container {
+    text-align: center;   /* 居中对齐所有内容 */
+    padding: 20px;        /* 添加周围的间距 */
+}
+
+.team-members a {
+    margin: 0 120px;       /* 在链接之间添加间距 */
+    text-decoration: none; /* 删除下划线 */
+    color: #000;          /* 将链接颜色设置为黑色 */
+    line-height: 19em;     /* 设置高度，你可以根据需要调整这个值 */
+    font-size: 50px;      /* 设置字体大小，你可以根据需要调整这个值 */
+}
+
+.team-members a:hover {
+    color: #999;          /* 当鼠标悬停在链接上时改变颜色 */
+}
+body#sj {
+    background-image: url('image/sj.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 120vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+body#jfh {
+    background-image: url('image/jfh.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 120vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+body#zyl {
+    background-image: url('image/zyl.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 120vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+body#pyj {
+    background-image: url('image/pyj.jpg'); 
+    width: 100vw;   /* 视口宽度的100% */
+    height: 120vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
