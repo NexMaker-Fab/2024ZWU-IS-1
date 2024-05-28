@@ -21,7 +21,22 @@ body#teamintro {
     background-size: cover;
     background-attachment: scroll;
 }
+body#course-work {
+    background-image: url('image/2.jpg'); 
+    width: 105vw;   /* 视口宽度的100% */
+    height: 100vh;  /* 视口高度的100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
 
+#mainContent {
+    margin-top: 100px;  /* 添加了50像素的顶部边距 */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 #content {
     width: 100%;  
     min-height: 100vh; 
