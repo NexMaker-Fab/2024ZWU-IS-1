@@ -1,0 +1,111 @@
+*{padding: 0;margin: 0;}
+ul, ol {list-style: none;}
+a{text-decoration: none; color: black;}
+.pw{width: 1200px;margin: 0 auto;}
+body {
+    font-family: "Songti TC", "宋体", "Songti SC";
+    font-size: 22px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 0;
+}
+.nav li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 24px;
+}
+.nav li a:hover {
+    transition: .5s;
+    color: #999999;
+    font-weight: bold;
+}
+.content.title, .about, .homework {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.content h2 {
+    font-size: 120px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px #f0c78a;
+    animation: titleAnimal .7s ease-in-out;
+}
+@keyframes titleAnimal {
+    from {transform: translateY(-1000px)}
+    to {transform: translateY(0)}
+}
+.about a {
+    text-align: center;
+    margin: 0 50px;
+}
+.about a:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+.about img {
+    width: 120px;
+}
+.about {
+    animation: aboutAnimal .7s ease-in-out;
+}
+@keyframes aboutAnimal {
+    from {transform: translateX(-1000px)}
+    to {transform: translateY(0)}
+}
+body.person {
+    background: #f59ba5;
+}
+a.return {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 40px 0;
+    display: block;
+}
+.person .sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+}
+.person .sec img {
+    height: 200px;
+}
+
+.person .sec .text h2 {
+    padding: 15px 0;
+}
+.homework .box {
+    display: inline-block;
+}
+.homework a {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+}
+.homework a::before {
+    content: "•";
+    margin-right: 10px;
+}
+.homework {
+    animation: homeworkAnimal .7s ease-in-out;
+}
+@keyframes homeworkAnimal {
+    from {transform: translateX(1000px)}
+    to {transform: translateY(0)}
+}
+.homework-body {
+    background: #999999;
+}
+.pdf-sec {
+    display: flex;
+    justify-content: center;
+}
+.pdf-sec embed {
+    width: 70%;
+    height: 80vh;
+}
