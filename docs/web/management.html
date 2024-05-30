@@ -45,6 +45,227 @@
             <img src="../images/img17.png" alt="">
             <img src="../images/img18.png" alt="">
             <p>You can see the uploaded page here</p>
+            <h4>Here is the code for the home page</h4>
+            <pre><code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;title&gt;&lt;/title&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+                &lt;/head&gt;
+                &lt;body class=&quot;person&quot;&gt;
+                &lt;ul class=&quot;nav pw&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;web/about.html&quot;&gt;About US&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;web/homework.html&quot;&gt;Daily homework&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Finalworik&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class=&quot;content title&quot;&gt;
+                    &lt;h2&gt;SZPJ-TEAM&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                <h4>Next is the group.</h4>
+                <pre><code class="language-html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt;&lt;/title&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;link href="../css/style.css" rel="stylesheet" type="text/css"&gt;
+                        &lt;/head&gt;
+                        &lt;body class="person"&gt;
+                        &lt;ul class="nav pw"&gt;
+                            &lt;li&gt;&lt;a href="../index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="about.html"&gt;About US&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="homework.html"&gt;Daily homework&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=""&gt;Finalworik&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class="content about"&gt;
+                           &lt;a href="person1.html"&gt;&lt;img src="../images/person1.jpg" alt=""&gt;&lt;p&gt;Jin&lt;/p&gt;&lt;/a&gt;
+                           &lt;a href="person2.html"&gt;&lt;img src="../images/person2.jpg" alt=""&gt;&lt;p&gt;Auskin&lt;/p&gt;&lt;/a&gt;
+                           &lt;a href="person3.html"&gt;&lt;img src="../images/person3.jpg" alt=""&gt;&lt;p&gt;Camellia&lt;/p&gt;&lt;/a&gt;
+                           &lt;a href="person4.html"&gt;&lt;img src="../images/person4.jpg" alt=""&gt;&lt;p&gt;Pelagia&lt;/p&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                    <h4>Next is a personal introduction (take one person as an example)</h4>
+                    <pre><code class="language-html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt;Title&lt;/title&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;link href="../css/style.css" rel="stylesheet" type="text/css"&gt;
+                        &lt;/head&gt;
+                        &lt;body class="person"&gt;
+                        &lt;div class="pw"&gt;
+                            &lt;a href="about.html" class="return"&gt;back&lt;/a&gt;
+                            &lt;div class="sec"&gt;
+                                &lt;img src="../images/person1.jpg" alt=""&gt;
+                                &lt;div class="text"&gt;
+                                    &lt;h2&gt;史进&lt;/h2&gt;
+                                    &lt;h2&gt;2022015537&lt;/h2&gt;
+                                    &lt;h2&gt;个人简介:ENFJ，正常人。&lt;/h2&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        </code></pre>
+                        <h4>Next comes the css</h4>
+                        <pre><code class="language-css">
+*{padding: 0;margin: 0;}
+ul, ol {list-style: none;}
+a{text-decoration: none; color: black;}
+.pw{width: 1200px;margin: 0 auto;}
+body {
+    font-family: "Songti TC", "宋体", "Songti SC";
+    font-size: 22px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 0;
+}
+.nav li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 24px;
+}
+.nav li a:hover {
+    transition: .5s;
+    color: #3a5722;
+    font-weight: bold;
+}
+.content.title, .about, .homework {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.content h2 {
+    font-size: 120px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px #2d4b26;
+    animation: titleAnimal .7s ease-in-out;
+}
+@keyframes titleAnimal {
+    from {transform: translateY(-1000px)}
+    to {transform: translateY(0)}
+}
+.about a {
+    text-align: center;
+    margin: 0 50px;
+}
+.about a:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+.about img {
+    width: 120px;
+}
+.about {
+    animation: aboutAnimal .7s ease-in-out;
+}
+@keyframes aboutAnimal {
+    from {transform: translateX(-1000px)}
+    to {transform: translateY(0)}
+}
+body.person {
+    background: #a9dd6d;
+}
+a.return {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 40px 0;
+    display: block;
+}
+.person .sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+}
+.person .sec img {
+    height: 200px;
+}
+
+.person .sec .text h2 {
+    padding: 15px 0;
+}
+.homework .box {
+    display: inline-block;
+}
+.homework a {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+.homework a::before {
+    content: "•";
+    margin-right: 10px;
+}
+.homework {
+    animation: homeworkAnimal .7s ease-in-out;
+}
+@keyframes homeworkAnimal {
+    from {transform: translateX(1000px)}
+    to {transform: translateY(0)}
+}
+.homework-body {
+    background: #a9dd6d;
+}
+.pdf-sec {
+    display: flex;
+    justify-content: center;
+}
+.pdf-sec {
+    width: 70%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #a9dd6d;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px #324412;
+}
+.pdf-sec .box {
+    box-sizing: border-box;
+    padding: 40px;
+}
+.pdf-sec .box h2 {
+    text-align: center;
+}
+.pdf-sec .box h4 {
+    padding: 25px 0;
+    font-size: 25px;
+}
+.pdf-sec .box p {
+    line-height: 1.7em;
+    padding: 20px 0;
+}
+pre {
+    font-family: "Songti TC", "宋体", "Songti SC";
+    line-height: 1.7em;
+    padding: 20px 0;
+    white-space: pre-wrap;
+    }
+.pdf-sec .box img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+}
+
+                            </code></pre>
         </div>
     </div>
 </div>
