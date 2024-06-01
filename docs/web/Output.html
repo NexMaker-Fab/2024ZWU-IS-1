@@ -12,7 +12,7 @@
     <div class="pdf-sec">
         <div class="box">
             <h2>Arduino Output</h2>
-            <h4>1.Learn open source hardwork</h4>
+            <h4>01.Learn open source hardwork</h4>
             <h4>Arduino</h4>
             <p>About the main features and functions of Arduino Uno:</p>
             <p>Uses the ATmega328P, an 8-bit AVR microcontroller with 32KB Flash memory, 2KB SRAM, and 1KB EEPROM.</p>
@@ -38,7 +38,7 @@
             <p> </p>
             <p>A soil moisture sensor consists of two wires that measure the water content in the soil. These leads allow electricity to flow through the soil and in turn calculate the resistance value to measure the moisture content. If there is more water in the soil, then the soil will conduct more electricity, which means lower resistance values as well as higher moisture content. Similarly, if there is less water in the soil, then the conductivity of the soil will be reduced, which means that the resistance value is high and the moisture content is low.</p>
             <p>  </p>
-            <h4>2.Learn the  Arduino IDE</h4>
+            <h4>02.Learn the  Arduino IDE</h4>
             <p>  </p>
             <p>The interface is roughly divided into four parts: </p>
             <p>Menu bar: includes file menu, edit menu, program menu, tool menu and help menu;  </p>
@@ -55,55 +55,100 @@
             <p>Tools-> Port: Set the port required by the Arduino IDE download program, that is, the port through which the development board connects to the computer  </p>
             <img src="../images/out/image7.jpeg" alt="">             
             <p>  </p>            
-            <h4>3.Run water light program</h4>
-            <h4>1.Installation library file</h4>
-            <p>a.:the library file compression package is downloaded to the computer.  </p>
-            <img src="../images/out/image8.jpeg" alt="">          
-            <p>b.:Find the folder named Ardunio in the folder named Adafruit NeoPixel-master.rar  </p>     
-            <img src="../images/out/image9.jpeg" alt="">    
-            <p>c.Open the Arduino to find the sample in the edit, click Adafruit NeoPixel in the third party sample, and find the strandtest wheel  </p>    
-            <img src="../images/out/image10.jpeg" alt="">    
-            <p>d.Connect as follows  </p>    
+            <h4>03.Flow lamp program</h4>
+            <h4>1. First achieve an led light off</h4>
             <pre>
-                <code>
-                /**
-                 * Setup and Draw. 
-                 * The code in setup() is run once when the program starts.
-                 * The code inside the draw() function runs continuously from top to bottom until the program is stopped. The
-                 * Reference from https://processing.org/examples/setupdraw.html
-                 **/
-                
-                int y = 180;
-                float x;// x=ky=(640/360)*y
-                void setup() {
-                  size(640, 360);  // Size must be the first statement
-                  stroke(255,0,0);  // Set line drawing color to white
-                  strokeWeight(5);//the define of bold
-                  stroke(255,0,0);
-                }
-                
-                void draw() { 
-                  background(0);  // Clear the screen with a black background
-                  x = y*640/360;
-                  strokeWeight(5);
-                  stroke(255,0,0);
-                  line(0, y, width, y); 
-                  strokeWeight(1);
-                  stroke(0,255,0);
-                  line(x, 0, x, height);
-                  y = y - 1; 
-                  if (y &lt; 0) { 
-                    y = height;
-                    x = width;
-                  }
-                }
-                </code>
-                </pre>
+              <code>
+              int ledPin = 10; //定义数字10 接口
+              void setup()
+              {
+              pinMode(ledPin, OUTPUT);//定义小灯接口为输出接口
+              }
+              void loop()
+              {
+              digitalWrite(ledPin, HIGH); //点亮小灯
+              delay(1000); //延时1 秒
+              digitalWrite(ledPin, LOW); //熄灭小灯
+              delay(1000); // 延时1 秒
+              }
+              </code>
+              </pre>
+              <p>  </p>
+              <p>Circuit diagram</p>
+              <img src="../images/out/111.png" alt="">
+            <img src="../images/out/112.png" alt="">
+            <h4>2.Realization flow lamp</h4>          
+            <p>In the case of enabling an LED to light up and off, we will further achieve the results of enabling a string of LED lights to light up and off like water</p>
+            <pre>
+              <code>
+              void setup()
+              {
+              pinMode(3, OUTPUT);
+              pinMode(4, OUTPUT);
+              pinMode(5, OUTPUT);
+              pinMode(6, OUTPUT);
+              pinMode(7, OUTPUT);
+              pinMode(8, OUTPUT);
+              pinMode(9, OUTPUT);
+              pinMode(10, OUTPUT); 
+              }
+              void loop()
+              {
+              digitalWrite(3, HIGH); 
+              delay(100); 
+              digitalWrite(3, LOW); 
+              delay(100);
+              
+              digitalWrite(4, HIGH); 
+              delay(100); 
+              digitalWrite(4, LOW); 
+              delay(100); 
+              
+              digitalWrite(5, HIGH); 
+              delay(100);
+              digitalWrite(5, LOW); 
+              delay(100); 
+              
+              digitalWrite(6, HIGH); 
+              delay(100); 
+              digitalWrite(6, LOW); 
+              delay(100); 
+              
+              digitalWrite(7, HIGH); 
+              delay(100); 
+              digitalWrite(7, LOW); 
+              delay(100); 
+              
+              digitalWrite(8, HIGH); 
+              delay(100);
+              digitalWrite(8, LOW); 
+              delay(100); 
+              
+              digitalWrite(9, HIGH); 
+              delay(100); 
+              digitalWrite(9, LOW); 
+              delay(100);
+              
+              digitalWrite(10, HIGH); 
+              delay(100); 
+              digitalWrite(10, LOW); 
+              delay(100); 
+              }
+              </code>
+              </pre>    
+              <p>  </p> 
+              <p>Circuit diagram</p>
+            <img src="../images/out/990.png" alt="">    
+            <img src="../images/out/998.png" alt="">    
+            <h4>3.Physical connection mode</h4>
+            <img src="../images/out/997.jpg" alt="">
+            <h4>4.Result video</h4>
                 <video width="800" height="600" controls>
-                    <source src="../images/out/w1.mp4" type="video/mp4">
-                    <source src="../images/out/w1.mp4" type="video/ogg">
+                    <source src="../images/out/1111.mp4" type="video/mp4">
+                    <source src="../images/out/1111.mp4" type="video/ogg">
                   </video>
-            <h4>4 Find some open source projects</h4>           
+                  <p>  </p>
+            <h4>04 Find some open source projects</h4>           
             <p>  </p>    
             <p>a. Microalgal lamp:  </p>    
             <p>  </p>    
