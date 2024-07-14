@@ -142,5 +142,10 @@ pre {
     margin: 0 auto 10px;
     width: 100%;
 }
-
+/* 让标题字体最大且居中的 CSS */
+h1 {
+    font-family: '新字体名'; /* 请替换这里的 '新字体名' 为你希望使用的字体名 */
+    text-align: center; /* 文本居中 */
+    font-size: max-content; /* 让字体的尺寸尽量大 */
+  }
 
